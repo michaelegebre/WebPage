@@ -35,7 +35,7 @@ li a {
   padding:20px;
   text-decoration: none;
 }
- article {
+  section{
    border-style: solid;
    border-width: 3px;
    background-color:white;
@@ -48,7 +48,7 @@ li a {
    margin: auto;
    border-radius: 10px;
  }
- article{
+ section{
    border-radius: 10px;
 
  }
@@ -57,14 +57,14 @@ li a {
    margin: 1px;
 
  }
- h2{
+ /* h2{
    font-size:45px;
    background-color: black;
 
  }
  h2:hover {
    background-color: grey;
- }
+ } */
  h1{
  font-size: 35px;
 pargraphy
