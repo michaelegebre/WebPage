@@ -1,5 +1,5 @@
 
-header, nav, footer, main, aside{
+header, nav,footer, main, aside{
   width: 100%;
   height: 100%;
 
@@ -12,11 +12,11 @@ header, nav, footer, main, aside{
 .indexContainer{
   display: grid;
   grid-gap: 3px;
-  grid-template-columns: repeat(3 1fr);
-  grid-template-rows: 40px 1fr 40px;
+  grid-template-columns:repeat(3 1fr);
+  grid-template-rows:50px 1fr 40px;
   grid-template-areas:
-  "header header header"
-  "main . aside"
+  " aside header aside "
+  "main  main aside"
   "footer footer footer"
 }
 .indexMain{
@@ -35,17 +35,13 @@ header, nav, footer, main, aside{
 
 .indexContainer{
   display:grid;
-  gri
 }
 .page2Container{
   display: grid;
-  grid-gap: 3px;
-  grid-template-columns: repeat(1 1fr);
-
-  
-  grid-template-rows: 90px 1fr 40px;
-  grid-template-areas:
-  "header. header"
+  grid-gap: 10px;
+  grid-row:100px;
+  grid-template-columns: repeat(3 1fr);
+    ". ."
   " footer footer footer"
   " main . main"
 }
