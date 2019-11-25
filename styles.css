@@ -1,9 +1,10 @@
 .indexContainer{
-  background-color:#659D;
+  background-color:#565656;
 }
 header, nav,footer, main, aside{
-  width: 100%;
-  height: 100%;
+
+width: 80%;
+height: 80%;
 
 }
 
@@ -15,8 +16,8 @@ header, nav,footer, main, aside{
   display: grid;
   grid-gap: 3px;
   grid-template-columns:repeat(3 1fr);
-  grid-template-rows:60px 1fr 40px;
-  grid-row: 50px;
+  grid-template-rows:60px 1fr 60px;
+  grid-row: 20px;
   grid-template-areas:
 
   " header header header "
@@ -44,12 +45,12 @@ header, nav,footer, main, aside{
 .page2Container{
   display: grid;
   grid-gap: 5px;
-  background: ;
+  background: #4717F6;
   grid-row:90px;
   grid-template-columns: repeat(3 1fr);
-    ". ."
-  " footer footer footer"
-  " main . main"
+    "header header header"
+  " mai"
+  " "
 }
 .page2Main{
   grid-area: main;
@@ -85,7 +86,7 @@ li {
 li a {
   display: block;
   text-align: center;
-  color: Red;
+    color: Red;
 
 
   padding:20px;
@@ -94,7 +95,7 @@ li a {
   section{
    border-style: solid;
    border-width: 3px;
-   background-color:white;
+   background-color:black;
    margin: 10px;
 }
 /* screen reader only rule */
@@ -107,7 +108,7 @@ width: 1px;
 }
 /*  end of screen reader only rule */
 
-
+body
  p{
    padding: 3px;
    margin: auto;
@@ -127,14 +128,18 @@ width: 1px;
 
  }
 
+ .responsive {
+   width: 80%;
+ }
+
 
 
 
 
 section {
   background-color:white;
-  color: black;
-  text-decoration-color:blue;
+  color:blue;
+  text-decoration-color:red;
 }
 
 }
