@@ -150,3 +150,49 @@ section {
   border-color: blue;
 
 }
+
+/* Event page Design */
+.eventPage {
+  background-image: url(jan-abellan-Vf6Voxf-q80-unsplash.jpg);
+  background-size: cover;
+}
+/* even page nav */
+eventNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: lightGray;
+
+}
+
+eventNav li{
+  list-style-type: none;
+}
+
+eventGrid section a{
+  color: blue;
+  font-family: monospace;
+  font-size: 1.2em;
+  text-decoration: underline;
+
+}
+
+/* end event page nav */
+
+/* event grid */
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.eventGrid p, .eventGrid object, .eventGrid h2{
+  margin: 10px 5px 10px 5px;
+}
+
+
+
+/* end event page design */
