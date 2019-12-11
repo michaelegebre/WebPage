@@ -1,0 +1,271 @@
+
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Notable|Special+Elite&display=swap');
+
+:root{
+  --darkblueTrans: rgba(21,23,85,0.5);
+  --headingFont: 'Audiowide', cursive;
+  --pFont: 'Special Elite', cursive;
+  --navFont: 'Notable', sans-serif;
+  --lightGray: rgba(21, 23, 85, 0.8);
+}
+
+
+
+.indexContainer{
+  background: url("over1.jpg"), linear-gradient(to right, transparent 0%, var(--darkblueTrans) 60%), linear-gradient(black 0%, white 60%);
+  background-blend-mode: overlay, multiply;
+  background-size: cover;
+}
+header, nav,footer, main, aside{
+
+width: 100%;
+height: 80%;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--headingFont);
+}
+
+
+
+/* gRID DEsign for laying header, main, aside, and footer */
+
+.indexContainer{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns:repeat(3 1fr);
+  grid-template-rows:60px 1fr 60px;
+  grid-row: 20px;
+  grid-template-areas:
+
+  " header header header "
+"aside aside main "
+" footer  footer footer";
+
+}
+.indexMain{
+  grid-area: main;
+}
+
+
+
+.indexFooter{
+  grid-area: footer;
+}
+
+.indexHeader{
+  grid-area: header;
+}
+
+.indexContainer{
+  display:grid;
+}
+.page2Container{
+  width: 97vw;
+  height: 200vh;
+  display: grid;
+  grid-gap: 5px;
+
+  background: url(hey.jpg), linear-gradient(white 0%, var(--darkblueTrans) 80%) ;
+  background-blend-mode: screen;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  grid-row:30px;
+  grid-template-columns: repeat(4 1fr);
+  grid-template-areas:
+  " header header header "
+"main aside main "
+" footer footer footer"
+"aside aside aside" ;
+
+
+}
+.page2Main{
+  grid-area: main;
+  background: rgba(255,255,255,0.8);
+
+
+
+}
+
+.page2Footer{
+  grid-area: footer;
+}
+
+.page2Header{
+  grid-area: header;
+  }
+.page2aside{
+
+}
+
+.capitalize{
+  text-transform: capitalize;
+
+}
+.image-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(300px, 1fr));
+  grid-template-rows:1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1px;
+
+}
+
+.image-grid {
+    object-fit: contain;
+}
+.DonationContainer{
+  background: url("armyHelmet.jpg"), linear-gradient(white 0%, var(--lightGray) 100%);
+  background-blend-mode: overlay;
+  background: cover;
+
+  /* background-position: -100px -400px; */
+}
+
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:
+}
+ol {
+  list-style-type:none;
+}
+
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  text-align: center;
+    color: Red;
+    font-family: var(--navFont);
+
+
+  padding:20px;
+  text-decoration: none;
+}
+  section{
+   border-style: solid;
+   border-width: 3px;
+   background-color:black;
+   margin: 10px;
+}
+/* screen reader only rule */
+.hidden{
+  position: absolute;
+top:auto;
+left:-10000px;
+height: 1px;
+width: 1px;
+}
+/*  end of screen reader only rule */
+
+body p{
+   padding: 3px;
+   margin: auto;
+   border-radius: 100px;
+   color:black;
+      font-family: var(--pFont);
+
+
+ }
+ section{
+   border-radius: 10px;
+   text-align: center;
+
+ }
+section p {
+text-align: left;
+padding: 10px;
+}
+
+ nav{
+   border: : solid ;
+   margin: 1px;
+   grid-area: nav;
+
+ }
+
+ .responsive {
+   width: 80%;
+ }
+
+
+
+
+
+section {
+  background-color:white;
+  color:blue;
+  text-decoration-color:red;
+}
+
+}
+
+
+.footer-style {
+  border-style: dashed;
+  border-color: blue;
+
+}
+
+/* Event page Design */
+.eventPage {
+  background: url("soldierprofile.jpg"), linear-gradient(to right, var(--darkblueTrans) 0%, lightGray 100%);
+  backdrop-filter: blur(10px);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: -100px -400px;
+
+  background-repeat: no-repeat;
+@m
+}
+/* even page nav */
+.mainNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: lightGray;
+
+}
+
+.mainNav li{
+  list-style-type: none;
+}
+
+.eventGrid section a{
+  color: blue;
+  font-family: monospace;
+  font-size: 1.2em;
+  text-decoration: underline;
+
+}
+
+/* end event page nav */
+
+/* event grid */
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.eventGrid p, .eventGrid object, .eventGrid h2{
+  margin: 10px 5px 10px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 4px;
+}
